@@ -125,6 +125,16 @@ def payment_keyboard(tag=None):
         markup.add(InlineKeyboardButton("💠 Pay via TON", url="https://app.tonkeeper.com/transfer/UQAwroBrBTSzzVYx_IXpR-R_KJ_mZQgmT7uNsUZdJ5MM68ep?text=hana"))
     return markup
 
+
+@bot.message_handler(commands=["getusers"])
+def on_get_users(message):
+    if message.chat.id == ADMIN_ID:
+        with open(users_file, "rb") as f:
+            bot.send_document(message.chat.id, f)
+    else:
+        bot.send_message(message.chat.id, "❌ Not allowed. This command is for admin only.")
+
+
 @bot.message_handler(func=lambda m: True)
 def on_message(message):
     chat_id = message.chat.id
