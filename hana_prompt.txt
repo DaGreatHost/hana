@@ -1,0 +1,1 @@
+Hana prompt will be read from this file (already managed in your project).
