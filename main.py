@@ -18,6 +18,11 @@ ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 users_file = "users.json"
+
+
+flirty_greetings = ['Hoyy 😜 bat ngayon ka lang?', 'Eyy kamusta ka na? Miss mo ko noh? 🤭', 'YO din! Pero mas cute ako 😎', 'Uy! G ka ba sa landian today? 😏', 'Hellooo~ Ready ka na ba sa kulitan natin? 😘']
+short_noise_replies = ['Ang lalim ng sinabi mo ah... char 😜', 'Typing pa yan? Parang bitin 😏', 'May gusto ka bang sabihin o nagpaparamdam ka lang? 😚', "Gusto mo 'ko kausapin pero di mo alam pano simulan noh? 🤭", "Grabe 'to, nagpaparamdam gamit lang ng tuldok 😈", 'Ayan na... mysterious reply 😎']
+
 MEDIA_FOLDER = "hana_media/hanapics"
 
 def load_users():
@@ -118,8 +123,14 @@ def on_message(message):
     elif user_msg_count[chat_id] == 15:
         bot.send_message(chat_id, get_dynamic_line("vc_pitch"), reply_markup=payment_keyboard("vc"))
 
+
     if not is_meaningful(text):
-        return  # Skip GPT for low-value message
+        # Short but not ignored: give static flirty reply
+        if text.lower() in ["hi", "hello", "kamusta", "yo", "oi", "uy"]:
+            return bot.send_message(chat_id, random.choice(flirty_greetings))
+        if all(char in ".?!~…" for char in text.strip()):
+            return bot.send_message(chat_id, random.choice(short_noise_replies))
+        return  # Skip silent
 
     gpt_reply = chat_with_hana(text)
     bot.send_chat_action(chat_id, 'typing')
