@@ -35,6 +35,17 @@ users = load_users()
 user_msg_count = {}
 last_vc_offer = {}
 
+# Filter: skip GPT for nonsense/short/generic messages
+def is_meaningful(text):
+    low = text.strip().lower()
+    if len(low) < 4:
+        return False
+    if low in ["hi", "hello", "ok", "okay", "yes", "no", "haha", "lol", "hm", "hmm", "huhu", "bye", "bai", "yo", "yo!", "oi", "uy", "haha!", "hello!", "hi!"]:
+        return False
+    if all(char in "👍😂🥺❤️🔥💀💯👌😎😩😳😍😘😏" for char in low):
+        return False
+    return True
+
 # Register user
 def register(chat_id, username):
     if str(chat_id) not in users:
@@ -106,6 +117,9 @@ def on_message(message):
         bot.send_message(chat_id, "Alam mo ba… may mga bagay akong sinasabi lang sa VIP 🤫", reply_markup=payment_keyboard("vip"))
     elif user_msg_count[chat_id] == 15:
         bot.send_message(chat_id, get_dynamic_line("vc_pitch"), reply_markup=payment_keyboard("vc"))
+
+    if not is_meaningful(text):
+        return  # Skip GPT for low-value message
 
     gpt_reply = chat_with_hana(text)
     bot.send_chat_action(chat_id, 'typing')
