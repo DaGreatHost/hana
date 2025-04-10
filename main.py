@@ -10,7 +10,7 @@ from langdetect import detect
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from vc_lines import vc_lines
 from vip_lines import vip_lines
-from hana_lines import get_dynamic_line
+
 from trigger_lines import vc_triggers, vc_replies, booking_triggers, booking_replies
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
