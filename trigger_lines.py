@@ -1,5 +1,5 @@
 
-vc_triggers = ["vc", "video call", "call", "videochat", "tawag", "cam", "vcs", "send ka dede", "send pepe", "puke", "puday", "dede", "suso"]
+vc_triggers = ["vc", "video call", "call", "videochat", "tawag", "cam", "vcs", "send ka dede", "send pepe", "puke", "puday", "dede", "suso", "vip"]
 
 vc_replies = [
     "Gusto mo ba ng naughty VC with me? Face reveal, finger, and utos mo lahat 😈 ₱250 lang!",
