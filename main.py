@@ -150,11 +150,14 @@ def on_message(message):
         return
 
     if not is_meaningful(text):
-        reply = static_reply_for_nonsense(text)
-        if reply:
-            bot.send_message(chat_id, reply)
-            users[str(chat_id)]["reply_count"] += 1
-            save_users(users)
+        if text.lower() in ["hi", "hello", "kamusta", "yo", "uy", "oi"]:
+            bot.send_message(chat_id, get_greeting_reply())
+        elif text.strip() in [".", "?", "ok", "hm", "lol", "haha"]:
+            bot.send_message(chat_id, get_short_or_boring_reply())
+        else:
+            bot.send_message(chat_id, get_random_landi())
+        users[str(chat_id)]["reply_count"] += 1
+        save_users(users)
         return
 
     reply = chat_with_hana(text)
