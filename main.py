@@ -146,7 +146,7 @@ def on_message(message):
             btn.add(InlineKeyboardButton("📍 Book Me Now", url="https://t.me/asiansexphbot?startapp=Login"))
             return bot.send_message(chat_id, msg, reply_markup=btn)
 
-    if users[str(chat_id)]["reply_count"] >= 10:
+    if users[str(chat_id)]["reply_count"] >= 5:
         return
 
     if not is_meaningful(text):
