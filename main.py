@@ -11,7 +11,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from vc_lines import vc_lines
 from vip_lines import vip_lines
 from hana_lines import get_dynamic_line
-from trigger_lines import vc_triggers, vc_replies, booking_triggers, booking_replies
+from trigger_lines import vc_triggers, vc_replies, booking_triggers, booking_replies, atabs_triggers
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
@@ -143,10 +143,17 @@ def on_message(message):
         if word in booking_triggers:
             msg = random.choice(booking_replies)
             btn = InlineKeyboardMarkup()
-            btn.add(InlineKeyboardButton("📍 Book Me Now", url="https://t.me/asiaxsexphbot?startapp=Login"))
+            btn.add(InlineKeyboardButton("📍 Book Me Now", url="https://t.me/yourpinayatabs_bot?startapp=Login"))
             return bot.send_message(chat_id, msg, reply_markup=btn)
+    if word in atabs_triggers:
+        msg = "Gusto mo ng trending ATABS content? 📲 Check this out:"
+        btn = InlineKeyboardMarkup()
+        btn.add(InlineKeyboardButton("🔗 View ATABS Vault", url="https://t.me/trendsmodbot"))
+        return bot.send_message(chat_id, msg, reply_markup=btn)
+
 
     if users[str(chat_id)]["reply_count"] >= 5:
+        bot.send_message(chat_id, "Later nalang pag nag avail kana sir 😌")
         return
 
     if not is_meaningful(text):
