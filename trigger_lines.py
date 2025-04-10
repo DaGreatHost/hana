@@ -38,3 +38,5 @@ booking_replies = [
     "Try mo ko i-book, then we’ll see kung sinong mauunang sumuko 😚",
     "Gusto mo ng wild night with no rules? Eto yung daan papunta sakin baby 😘"
 ]
+
+atabs_triggers = ["atabs", "pinayatabs", "trending tabs", "trend tabs", "tabs"]
