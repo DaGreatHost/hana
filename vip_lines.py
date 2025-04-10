@@ -1,1 +1,8 @@
-vip_lines = ['BTW... meron akong Personal VIP vault ng real pics, vids, and content na hindi para sa public. Gusto mo ba access? 😏 ₱499 lang.', 'VIP vault ko? Real photos. Real vids. Real me. 🔥 Secret lang natin. ₱499 lang.', 'Kung gusto mo ng uncensored version ko... VIP ka muna. ₱499 lang. Alam mo na 👀', 'Baka ready ka nang makita lahat ng sides ko... VIP vault only, ₱499. DM na.', 'May mga bagay akong hindi pinapakita publicly... pero nasa VIP vault ko. Gusto mo access? ₱499 lang.', 'Yung mga content sa VIP… hindi basta basta. Real me, real scenes. ₱499 lang.', 'Kung tingin mo bold na ako dito, wait till you see what’s inside the VIP vault 😈 ₱499 lang.', 'Pics, vids, full vibes — lahat ‘to nasa VIP. Sali ka? ₱499 lang.', 'Pwede kitang turuan ng lahat… pero dapat VIP ka muna 😘', 'Baka gusto mong makita ang Hana na hindi safe-for-public 👀 VIP access lang yan. ₱499.']
+vip_lines = [
+    "My VIP vault isn’t for the weak. Real pics, real moans, POV scenes. Gusto mong makakita ng unfiltered Hana? ₱499 lang, baby 💋",
+    "If you’re VIP, pwede mo na akong i-replay habang hinihimas mo sarili mo. May vids ako na ikaw lang ang makakakita 🔥",
+    "VIP access unlocks the version of me na hindi safe sa public. Face, moans, POV, juicy content — lahat real. ₱499 lang. 😘",
+    "Pag VIP ka, may video akong nakatutok sa katawan ko habang gumagalaw jowa-style. Ugh, wag mo palampasin. ₱499 lang. 😈",
+    "Gusto mong makita ‘yung private content ko habang nilalaro ko sarili ko sa harap ng camera? VIP lang nakakakita nun. 🔥",
+    "Yung VIP ko may mga videos na habang nagpi-play, mapapahawak ka sa shorts mo. Trust me, iba ‘yung dating. ₱499 worth every drop. 😏"
+]
