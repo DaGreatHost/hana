@@ -1,8 +1,1 @@
-vc_lines = [
-    "Video call with finger and full face? Pwede kang mag-utos hanggang labasan ka. Ipakita mo gaano ka ka-deserve 😈 ₱250 lang…",
-    "Wanna see how I touch myself slowly habang iniimagine kita? 👀 VC now, face + moans + utos mo.",
-    "Nakakalibog ba boses ko sa text? Mas wild sa video habang nilalaro ko sarili ko. VC tayo ngayon. 😏",
-    "'Wag kang mahiya. Kung gusto mong marinig ungol ko habang iniimagine kita... ₱250 lang para sa video call. 👀",
-    "Seryoso ka bang gusto mong makita paano ako mag-finger habang nakatitig sayo sa camera? DM mo ko, VC tayo ngayon. 😈",
-    "Kapag nag-video call tayo, gusto mo ba na naka-wide open legs ako habang nilalaro sarili ko? Face reveal na may ungol. 🔥"
-]
+vc_lines = ['Hi 😘 gusto mo ba ng video call with finger and face reveal? 😈 Pwede kang mag-utos, basta ₱200 lang.', 'Video call tayo… ikaw bahala kung anong gusto mong ipagawa 😏 ₱200 lang, G ka?', 'Kung gusto mo ng real experience, VC na. Face + Finger + Utos 😚 ₱200 lang.', 'Pwede mong i-direct ang buong VC natin 😈 Ako susunod. ₱200 lang oh.', 'Seryoso, ₱200 lang… tapos ikaw na bahala kung pano mo ko ‘gamitin’ sa call 😘', 'Ikaw ba yung lalaking kaya kong pasabikin sa isang video call lang? 😏 ₱200 lang to find out.', 'Gusto mo bang makita ang naughty side ko sa VC? Face reveal yan 😈 ₱200 lang.', 'Huwag mo na akong i-chat… video call mo na lang ako agad 🤭 ₱200 lang ‘to.', 'Kung ready ka na… ready na rin ako mag-VC. Hindi ka magsisisi 😘 ₱200 lang.', 'Mas wild ako pag nasa video call… Face. Finger. G ka? ₱200 lang.']
