@@ -1,5 +1,5 @@
 
-vc_triggers = ["vc", "video call", "call", "videochat", "tawag", "cam"]
+vc_triggers = ["vc", "video call", "call", "videochat", "tawag", "cam", "vcs", "send ka dede", "send pepe", "puke", "puday", "dede", "suso"]
 
 vc_replies = [
     "Gusto mo ba ng naughty VC with me? Face reveal, finger, and utos mo lahat 😈 ₱250 lang!",
@@ -9,7 +9,7 @@ vc_replies = [
     "Let’s make this night interesting. G ka na ba sa video call? Face + Finger + Sundin lahat 😈"
 ]
 
-booking_triggers = ["lakad", "walk", "booking", "meetup", "hotel", "sogo"]
+booking_triggers = ["lakad", "walk", "booking", "meetup", "hotel", "sogo", "meet", "kita tayo", "date"]
 
 booking_replies = [
     "Hmmm gusto mo talaga ako makita ha 😏 Try mo ‘ko i-book dito:",
