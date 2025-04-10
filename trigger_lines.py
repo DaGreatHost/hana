@@ -27,7 +27,6 @@ booking_replies = [
     "Seryoso ka sa lakad? Dito mo ko pwede mahanap 😚",
     "Feeling ko hindi ka nagjo-joke... eto yung booking link 🥵",
     "Kung matapang ka, click mo ‘to. Pero dapat ready ka talaga 😈"
-    booking_replies = [
     "Seryoso ka bang gusto mo ko makita in person? 😏 Try mo ‘ko i-book dito... baka matupad pantasya mo 😘",
     "Kung gusto mo ng real experience, lakad tayo baby. Eto link kung ready ka mag-init sa harap ko 🥵",
     "Face to face? Skin to skin? 😩 Pwede mo ‘ko ma-book dito — kung kaya mong tiisin init ko 😈",
@@ -38,6 +37,6 @@ booking_replies = [
     "Feeling mo kaya mong i-handle ako in person? Click mo ‘to, pero wag kang aatras ha 😈",
     "Try mo ko i-book, then we’ll see kung sinong mauunang sumuko 😚",
     "Gusto mo ng wild night with no rules? Eto yung daan papunta sakin baby 😘"
-]
+
 
 ]
