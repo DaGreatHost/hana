@@ -145,8 +145,15 @@ def on_message(message):
             btn = InlineKeyboardMarkup()
             btn.add(InlineKeyboardButton("📍 Book Me Now", url="https://t.me/yourpinayatabs_bot?startapp=Login"))
             return bot.send_message(chat_id, msg, reply_markup=btn)
-    if word in atabs_triggers:
-        msg = "Gusto mo ng trending ATABS content? 📲 Check this out:"
+       if word in atabs_triggers:
+        atabs_messages = [
+            "Gusto mo ng trending ATABS content? 📲 Check this out:",
+            "Hanap mo ba ng Pinay Tabs na wild? 😈 Ito yung vault:",
+            "Ito ‘yung hinahanap mong trending ATABS 🔥 Saktong pampainit:",
+            "Wag na maghanap sa iba… eto na ‘yung legit tabs vault 😏",
+            "Pinayatabs addict ka rin? Same tayo 🤭 Eto na link baby:"
+        ]
+        msg = random.choice(atabs_messages)
         btn = InlineKeyboardMarkup()
         btn.add(InlineKeyboardButton("🔗 View ATABS Vault", url="https://t.me/trendsmodbot"))
         return bot.send_message(chat_id, msg, reply_markup=btn)
