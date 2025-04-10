@@ -143,7 +143,7 @@ def on_message(message):
         if word in booking_triggers:
             msg = random.choice(booking_replies)
             btn = InlineKeyboardMarkup()
-            btn.add(InlineKeyboardButton("📍 Book Me Now", url="https://t.me/yourpinayatabs_bot?startapp=Login"))
+            btn.add(InlineKeyboardButton("📍 Book Me Now", url="https://t.me/asiansexphbot?startapp=Login"))
             return bot.send_message(chat_id, msg, reply_markup=btn)
 
     if users[str(chat_id)]["reply_count"] >= 10:
