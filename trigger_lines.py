@@ -37,6 +37,4 @@ booking_replies = [
     "Feeling mo kaya mong i-handle ako in person? Click mo ‘to, pero wag kang aatras ha 😈",
     "Try mo ko i-book, then we’ll see kung sinong mauunang sumuko 😚",
     "Gusto mo ng wild night with no rules? Eto yung daan papunta sakin baby 😘"
-
-
 ]
