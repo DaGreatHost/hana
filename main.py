@@ -4,6 +4,7 @@ import os
 import json
 import time
 import random
+from gpt_limit_lines import get_limit_message
 import threading
 from datetime import datetime, timedelta
 from langdetect import detect
@@ -153,7 +154,7 @@ def on_message(message):
 
 
     if users[str(chat_id)]["reply_count"] >= 5:
-        bot.send_message(chat_id, "Later nalang pag nag avail kana sir 😌")
+        bot.send_message(chat_id, get_limit_message())
         return
 
     if not is_meaningful(text):
